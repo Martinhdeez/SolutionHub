@@ -56,8 +56,9 @@
 
 /* Enlace del chat */
 .chat-link {
-    text-decoration: none;
-}
+    text-decoration: none !important;
+    color: #573b8a;
+}   
 
 /* Efecto hover */
 .chat:hover {
