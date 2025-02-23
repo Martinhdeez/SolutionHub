@@ -1,0 +1,68 @@
+/* socials.css */
+.socials-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+
+    /* Centrando el contenedor */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-style{
+    margin-bottom: 25px;
+}
+
+.comment-style{
+    margin-bottom: 25px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between; /* Alinea los botones a la izquierda y derecha */
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+    padding: 0 20px;
+    gap: 10px; /* Espacio entre botones */
+}
+
+
+/* Botón */
+.btn-primary {
+    flex: 1; /* Hace que ambos botones ocupen el mismo espacio */
+    max-width: 150px; /* Evita que sean demasiado grandes */
+    padding: 14px;
+    background-color: #6d44b8;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #5a3799;
+}
+
+
+h2 {
+    color: #6d44b8;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

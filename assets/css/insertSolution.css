@@ -1,0 +1,98 @@
+/* Contenedor principal */
+.insert-solution-container {
+   position: absolute;
+   top: 5%;
+    left: 30%;
+    width: 100%;
+    max-width: 60%;
+   
+    padding: 20px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}   
+
+/* Título */
+.insert-solution-container h1 {
+    font-size: 28px;
+    color: #6d44b8;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.insert-solution-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Etiquetas */
+.insert-solution-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4c3c8c;
+    text-align: left;
+}
+
+/* Campos de entrada */
+.insert-solution-form input,
+.insert-solution-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #6d44b8;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+.insert-solution-form input:focus,
+.insert-solution-form textarea:focus {
+    border: 2px solid #a29bfe;
+    outline: none;
+}
+
+/* Botón */
+.insert-solution-form .btn-submit {
+    background: #6d44b8;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.insert-solution-form .btn-submit:hover {
+    background: #a29bfe;
+    transform: translateY(-3px);
+}
+
+#back{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #6d44b8;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#back:hover{
+    color: #a29bfe;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .insert-solution-container {
+        left: 5%;
+        top: 13%;
+        max-width: 90%;
+    }
+
+    .insert-solution-container h1 {
+        font-size: 24px;
+    }
+}

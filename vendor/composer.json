@@ -1,0 +1,16 @@
+{
+    "name": "martin/solution-hub",
+    "description": "A solution hub to find talentlous people",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martinhdeez",
+            "email": "m.hernandezg@udc.es"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

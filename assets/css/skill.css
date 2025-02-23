@@ -1,0 +1,153 @@
+
+
+/* Encabezado de Skill */
+.single_container .skill_header {
+    background: #4c3c8c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #a29bfe;
+}
+
+/* Container */
+.single_container {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    max-width: 1000px;
+   
+    padding: 20px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+.single_container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #6d44b8;
+}
+
+/* Estilos para formularios */
+.single_container form div {
+    margin-bottom: 15px;
+}
+
+.single_container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4c3c8c;
+}
+
+.single_container form input[type="text"],
+.single_container form input[type="textarea"] , #description, #title{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+.description{
+ margin-top: 25px;
+}
+
+#contact{
+    margin-top: 20px;
+}
+
+
+#like{
+    background-color: green;
+}
+
+#dislike{
+    background-color: red;
+}
+/* Botones (aplican a botones nativos, .btn-primary y #back) */
+.single_container button,
+.single_container .btn-primary,
+.single_container #back {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: #6d44b8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+#azul{
+    font-weight: bold;
+    color: #6d44b8;
+}
+
+.single_container button:hover,
+.single_container .btn-primary:hover {
+    background: #a29bfe;
+    transform: translateY(-3px);
+}
+
+/* Botón de eliminar */
+.single_container button[name="delete"] {
+    background: #e74c3c;
+}
+
+.single_container button[name="delete"]:hover {
+    background: #c0392b;
+}
+
+/* Estilo para el enlace de regresar */
+.single_container #back {
+    background-color: grey !important;
+    font-size: 15px;
+}
+
+/* Skills List: Enlaces dentro de un div */
+.single_container div a {
+    display: block;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    color: #4c3c8c;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.single_container div a:hover {
+    background: #4c3c8c;
+    color: #fff;
+    border: 1px solid #4c3c8c;
+    transform: translateX(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .single_container {
+        width: 95%;
+        top: 13%;
+        left: 3%;
+    }
+    
+    .single_container h1 {
+        font-size: 28px;
+    }
+}

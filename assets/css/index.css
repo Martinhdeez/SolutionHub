@@ -1,0 +1,146 @@
+/* General container styling */
+.skill_container {
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    top:70px;
+    left:500px;
+    padding: 20px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px !important;
+    text-align: center;
+}
+
+/* Title Styling */
+.skill-title {
+    font-size: 27px;
+    font-weight: bold;
+    color: #4c3c8c;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.skill-description {
+    font-size: 17px;
+    color: #777;
+    white-space: nowrap;  
+    font-weight: 300;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    width: 700px;
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+/* Link Styling */
+.skill-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+    border-radius: 20px !important;
+}
+
+/* Ocultar el thead (encabezado de tabla) */
+#thead {
+    display: none !important;
+}
+
+/* Link hover effect */
+.skill-link:hover .skill-title {
+    color: #6d44b8;
+}
+
+.skill-link:hover .skill-description {
+    color: #333;
+}
+
+/* DataTable styling: quitar bordes y fondos para que no parezca una tabla */
+#skillsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: transparent;
+}
+
+#skillsTable th,
+#skillsTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border: none;
+    background: transparent;
+}
+
+/* Opcional: estilizar los enlaces dentro de la tabla */
+#skillsTable td a {
+    display: block;
+    padding: 10px 15px;
+    background: transparent;
+    color: #4c3c8c;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+h1{
+    margin-bottom: 25px;
+    font-size: 36px;
+    color: #4f3286;
+}
+/* Estilos para el buscador de DataTables */
+.dataTables_filter {
+    margin-right: 35%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.dataTables_filter label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.dataTables_filter input {
+    border: 1px solid #ddd;
+    border-radius: 15px !important;
+    padding: 8px 12px;
+    outline: none;
+}
+
+.date{
+    font-size:13px;
+    color:rgb(165, 150, 150);
+}
+@media (max-width: 1460px) and (min-width: 1000px) {
+    .skill_container {
+        margin-left: 30%;
+        width: 40%;
+    }
+}
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .skill_container {
+        width: 95%;
+        position: absolute;
+        top: 12%;
+        left: 2%;
+    }
+
+    .skill-title {
+        font-size: 28px; /* Reduce title size for smaller screens */
+    }
+
+    .skill-description {
+        font-size: 12px; /* Reduce description size for smaller screens */
+    }
+
+    #skillsTable th,
+    #skillsTable td {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}

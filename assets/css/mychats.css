@@ -1,0 +1,136 @@
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor general para el chat */
+.mychats-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal del chat */
+.chats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin-top: -10%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: #573b8a;
+}
+
+/* Cabecera del chat */
+.chat-header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos de cada chat */
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+}
+
+/* Enlace del chat */
+.chat-link {
+    text-decoration: none;
+}
+
+/* Efecto hover */
+.chat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Punto de notificación animado */
+.notification-dot {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.7);
+    animation: pulse 1.5s infinite;
+}
+
+/* Animación de pulsación */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Información del chat */
+.watch-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Nombre del usuario */
+.watch-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Enlace al perfil */
+.social-link {
+    color: #573b8a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    background: #573b8a;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(255, 221, 87, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chats-container {
+        width: 100%;
+    }
+    .chat {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .notification-dot {
+        top: 8px;
+        width: 10px;
+        height: 10px;
+    }
+}

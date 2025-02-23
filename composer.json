@@ -1,0 +1,8 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "apigen/apigen": "^4.1"
+    }
+}

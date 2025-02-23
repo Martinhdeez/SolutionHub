@@ -1,0 +1,83 @@
+/* Estilos globales */
+#section {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Título del perfil */
+.profile-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #6d44b8;
+    font-weight: bold;
+}
+
+/* Estilos del formulario */
+.profile-info {
+    padding: 20px;
+}
+
+.profile-details form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    font-weight: bold;
+    color: #4c3c8c;
+    margin-bottom: 5px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+/* Botón de guardar cambios */
+.edit-profile-button {
+    width: 100%;
+    padding: 12px;
+    background: #6d44b8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.edit-profile-button:hover {
+    background: #a29bfe;
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #section {
+        width: 95%;
+        padding: 20px;
+    }
+    .profile-title {
+        font-size: 28px;
+    }
+}

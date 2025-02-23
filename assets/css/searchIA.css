@@ -1,0 +1,170 @@
+/* General container styling */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    top:70px;
+    left:500px;
+    padding: 20px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contenedor {
+    width: 70%;
+    max-width: 1000px; /* Asegurar que no se extienda demasiado */
+    position: absolute;
+    top:70px;
+    left:500px; /* Alineado con .skill_container */
+}
+/* Title Styling */
+.container h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #4f3286;
+    margin-bottom: 25px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4c3c8c;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #6d44b8;
+}
+
+/* Results container styling */
+#results {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+/* Mensajes de carga y error */
+#results p.loading {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+#results p.error {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+/* Lista de resultados */
+#results ul {
+    list-style: none;
+    padding: 0;
+}
+
+#results li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    transition: box-shadow 0.3s;
+}
+
+#results li:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Título y descripción de cada resultado */
+#results li h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #4c3c8c;
+}
+
+#results li p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Ajustamos el contenedor para que ocupe el 100% en pantallas pequeñas */
+    .container {
+        width: 90%;
+    }
+
+    /* El formulario de búsqueda se ajusta para ocupar más espacio */
+    form input[type="text"] {
+        width: 80%;
+    }
+
+    /* Los resultados de búsqueda y sus detalles también se ajustan */
+    #results li h3 {
+        font-size: 20px;
+    }
+
+    #results li p {
+        font-size: 14px;
+    }
+
+    /* Para que el contenedor esté centrado y 20px debajo del layout */
+    #contenedor {
+        width: 90%;
+        margin-top: 100px;
+        margin-left: 5%;
+    }
+
+    /* El body se alinea y se ajusta para ocupar todo el alto disponible */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Ajustes aún más pequeños para pantallas muy reducidas */
+    .container h1 {
+        font-size: 28px;
+    }
+
+    form input[type="text"] {
+        width: 90%;
+    }
+
+    #results li h3 {
+        font-size: 18px;
+    }
+
+    #results li p {
+        font-size: 12px;
+    }
+}
